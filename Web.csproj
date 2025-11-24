@@ -5,4 +5,8 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
+  <!-- Exclude test files from being compiled into the web project when tests live under the repo root -->
+  <ItemGroup>
+    <Compile Remove="Tests\**\*.cs" />
+  </ItemGroup>
 </Project>
