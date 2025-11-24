@@ -21,9 +21,11 @@
             </div>
             <div class="card-body">
                 <form method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" asp-for="Upload">
                         <label class="custom-file-label">Choose image</label>
+                        <span asp-validation-for="Upload" class="text-danger"></span>
                     </div>
                     <button type="submit" class="btn btn-secondary">Upload</button>
                 </form>
