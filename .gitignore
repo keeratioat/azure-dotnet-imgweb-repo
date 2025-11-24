@@ -1,0 +1,60 @@
+# Visual Studio / .NET / IDE common ignores
+# See https://github.com/github/gitignore for reference templates
+
+## Visual Studio
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build results
+bin/
+obj/
+Debug/
+Release/
+**/bin/
+**/obj/
+
+## Rider
+.idea/
+*.sln.iml
+
+## NuGet
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+
+## Publish / Deploy
+.publish/
+*.Publish.xml
+
+## Test results
+TestResults/
+*.trx
+*.coverage
+coverage/
+
+## ASP.NET / app settings (local overrides)
+appsettings.*.Local.json
+appsettings.*.Development.json
+
+## Logs
+*.log
+
+## OS generated files
+.DS_Store
+Thumbs.db
+
+## User-specific files
+*.userprefs
+*.csproj.user
+
+## Others
+*.db
+*.sqlite
+node_modules/
+npm-debug.log
+yarn.lock
